@@ -50,12 +50,12 @@ header {
 }
 .slider {
   position: relative;
-  max-width: 1200px;
+  max-width: 1300px;
   min-width: 250px;
   width: 80vw;
   margin: 50px auto;
   overflow: hidden;
-  border-radius: 14px;
+  border-radius: 3px;
   box-shadow: 0 3px 24px 0 #e3dfdf;
   background: #efefef;
 }
@@ -146,8 +146,8 @@ header {
   position: absolute;
   left: 0; right: 0; bottom: 0;
   background: rgba(255,255,255,0.93);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   padding: 23px 17px;
   text-align: left;
 }
