@@ -1,0 +1,122 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fafaf9;
+  color: #222;
+  font-family: 'Work Sans', 'League Spartan', Arial, sans-serif;
+  min-height: 100%;
+}
+
+header {
+  width: 100%;
+  padding-top: 22px;
+  padding-right: 55px;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 70px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.nav li a {
+  text-decoration: none;
+  font-family: 'Work Sans', Arial, sans-serif;
+  color: #a4a29e;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: color 0.15s;
+  padding: 0 7px;
+}
+
+.nav li a.active,
+.nav li a:hover {
+  color: #2e3739;
+}
+
+/* Main Photo Section */
+.photo-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 90px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.about-photo {
+  max-width: 680px;
+  width: 98vw;
+  height: auto;
+  display: block;
+  border: none;
+  box-shadow: 0 2px 14px 1px #eee;
+  background: #e8e8e7;
+}
+
+/* About/Bio text */
+.about-text {
+  margin: 35px auto 0 auto;
+  max-width: 920px;
+  text-align: justify;
+  color: #1a1a1a;
+  font-family: 'Work Sans', 'League Spartan', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (max-width: 850px) {
+  .about-photo { max-width: 98vw; }
+  .about-text { font-size: 16px; }
+  header { padding-right: 10px;}
+  .nav ul { gap: 18px; }
+}
+
+@media (max-width: 600px) {
+  .about-text { padding-left: 8px; padding-right: 8px; font-size: 15px;}
+  .photo-section { margin-top: 60px;}
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  color: #a4a29e;
+  font-family: 'Work Sans', Arial, sans-serif;
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.social {
+  margin-top: 38px;
+  margin-bottom: 6px;
+}
+
+.instagram-icon {
+  width: 32px;
+  height: 32px;
+  opacity: 0.62;
+  transition: opacity 0.18s;
+  filter: grayscale(45%);
+}
+
+.instagram-icon:hover {
+  opacity: 1;
+  filter: none;
+}
+
+.copyright {
+  margin-top: 0;
+  letter-spacing: 0.02em;
+  color: #727060;
+}
