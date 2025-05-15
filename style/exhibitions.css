@@ -44,7 +44,7 @@ header {
 
 /* Main Title */
 .page-title {
-  font-size: 64px;
+  font-size: 4rem;
   font-family: 'Work Sans', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -69,12 +69,15 @@ header {
 /* Exhibitions Grid */
 .exhibitions {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 42px;
   margin-left: 38px;
   margin-right: 38px;
-  margin-top: 24px;
+  margin-top: 80px;
   margin-bottom: 90px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  
 }
 
 .exhibition {

@@ -29,3 +29,45 @@ let slideIndex = 1;
 
     // Optional: Auto slide every 7 seconds
     setInterval(() => { plusSlide(1); }, 7000);
+
+
+    //Preview Window
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll('.project-gallery img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  let currentIndex = 0;
+
+  function showImage() {
+    lightboxImg.src = images[currentIndex].src;
+    lightbox.style.display = 'flex';
+  }
+
+  images.forEach((img, i) => {
+    img.addEventListener('click', () => {
+      currentIndex = i;
+      showImage();
+    });
+  });
+
+  document.querySelector('.close').addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  document.querySelector('.prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage();
+  });
+
+  document.querySelector('.next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage();
+  });
+
+  // Optional: Close on Esc key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      lightbox.style.display = 'none';
+    }
+  });
+});
