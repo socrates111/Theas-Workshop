@@ -1,24 +1,31 @@
-const slides = document.querySelectorAll('.slide');
-const nextBtn = document.querySelector('.right-arrow');
-const prevBtn = document.querySelector('.left-arrow');
-let index = 0;
+// slide logic
 
-function showSlide(newIndex) {
-  slides[index].classList.remove('active');
-  index = (newIndex + slides.length) % slides.length;
-  slides[index].classList.add('active');
-}
+let slideIndex = 1;
+    showSlides(slideIndex);
 
-function showNextSlide() {
-  showSlide(index + 1);
-}
+    function plusSlide(n) {
+      showSlides(slideIndex += n);
+    }
 
-function showPrevSlide() {
-  showSlide(index - 1);
-}
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-nextBtn.addEventListener('click', showNextSlide);
-prevBtn.addEventListener('click', showPrevSlide);
+    function showSlides(n) {
+      let i;
+      const slides = document.getElementsByClassName("slide");
+      const dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+      }
+      slides[slideIndex-1].classList.add("active");
+      dots[slideIndex-1].classList.add("active");
+    }
 
-// Auto-slide
-setInterval(showNextSlide, 5000);
+    // Optional: Auto slide every 7 seconds
+    setInterval(() => { plusSlide(1); }, 7000);
