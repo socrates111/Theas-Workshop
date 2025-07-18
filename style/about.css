@@ -52,8 +52,7 @@ header {
 }
 
 .about-photo {
-  max-width: 680px;
-  width: 98vw;
+  max-width: 500px;
   height: auto;
   display: block;
   border: none;
@@ -68,8 +67,8 @@ header {
   text-align: justify;
   color: #1a1a1a;
   font-family: 'Work Sans', 'League Spartan', Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.85;
+  font-size: 14px;
+  line-height: 1.60;
   letter-spacing: 0.01em;
   padding-left: 16px;
   padding-right: 16px;
@@ -103,8 +102,8 @@ footer {
 }
 
 .instagram-icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   opacity: 0.62;
   transition: opacity 0.18s;
   filter: grayscale(45%);
