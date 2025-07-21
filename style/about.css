@@ -1,19 +1,28 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #fafaf9;
-  color: #222;
-  font-family: 'Work Sans', 'League Spartan', Arial, sans-serif;
+  background: #fafafa;
+  color: #1a1a1a;
+  font-family: 'Work Sans', 'Nunito Sans', Arial, sans-serif;
   min-height: 100%;
 }
 
+/* Header/Nav */
 header {
   width: 100%;
   padding-top: 22px;
   padding-right: 55px;
   box-sizing: border-box;
-  position: relative;
   min-height: 70px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .nav ul {
@@ -23,11 +32,12 @@ header {
   display: flex;
   justify-content: flex-end;
   gap: 32px;
+  flex: 1;
 }
 
 .nav li a {
   text-decoration: none;
-  font-family: 'Work Sans', Arial, sans-serif;
+  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
   color: #a4a29e;
   font-size: 16px;
   letter-spacing: 0.06em;
@@ -39,6 +49,22 @@ header {
 .nav li a.active,
 .nav li a:hover {
   color: #2e3739;
+}
+
+/* Burger Menu */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #2e3739;
+  border-radius: 2px;
 }
 
 /* Main Photo Section */
@@ -74,18 +100,6 @@ header {
   padding-right: 16px;
 }
 
-@media (max-width: 850px) {
-  .about-photo { max-width: 98vw; }
-  .about-text { font-size: 16px; }
-  header { padding-right: 10px;}
-  .nav ul { gap: 18px; }
-}
-
-@media (max-width: 600px) {
-  .about-text { padding-left: 8px; padding-right: 8px; font-size: 15px;}
-  .photo-section { margin-top: 60px;}
-}
-
 /* Footer */
 footer {
   width: 100%;
@@ -119,3 +133,70 @@ footer {
   letter-spacing: 0.02em;
   color: #727060;
 }
+
+
+@media (max-width: 850px) {
+  .about-photo { max-width: 98vw; }
+  .about-text { font-size: 16px; }
+  header { padding-right: 10px;}
+  .nav ul { gap: 18px; }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .burger {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 10px;
+  }
+
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #fafafa;
+    border-top: 1px solid #ddd;
+    gap: 16px;
+  }
+
+  .nav ul.open {
+    display: flex;
+  }
+
+  .nav li {
+    width: 100%;
+  }
+
+  .nav li a {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-text { padding:10px; font-size: 14px;}
+  .photo-section { margin-top: 60px;}
+}
+
+@media (max-width: 575px) {
+
+  .nav li a {
+    font-size: 14px;
+  }
+
+  .burger span {
+    width: 20px;
+    height: 2px;
+  }
+}
+

@@ -2,17 +2,27 @@ html, body {
   margin: 0;
   padding: 0;
   background: #fafafa;
-  color: #222;
+  color: #1a1a1a;
   font-family: 'Work Sans', 'Nunito Sans', Arial, sans-serif;
   min-height: 100%;
 }
 
+/* Header/Nav */
 header {
   width: 100%;
   padding-top: 22px;
   padding-right: 55px;
   box-sizing: border-box;
   min-height: 70px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .nav ul {
@@ -22,6 +32,7 @@ header {
   display: flex;
   justify-content: flex-end;
   gap: 32px;
+  flex: 1;
 }
 
 .nav li a {
@@ -40,6 +51,22 @@ header {
   color: #2e3739;
 }
 
+/* Burger Menu */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #2e3739;
+  border-radius: 2px;
+}
+
 
 /* Contact Title */
 .contact-title {
@@ -52,6 +79,38 @@ header {
   margin-bottom: 30px;
   letter-spacing: 0.06em;
   text-align: center;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  color: #a4a29e;
+  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.social {
+  margin-top: 38px;
+  margin-bottom: 6px;
+}
+
+.instagram-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.62;
+  transition: opacity 0.18s;
+  filter: grayscale(45%);
+}
+.instagram-icon:hover {
+  opacity: 1;
+  filter: none;
+}
+.copyright {
+  margin-top: 0;
+  letter-spacing: 0.02em;
+  color: #727060;
 }
 
 @media (max-width: 900px) {
@@ -143,6 +202,47 @@ header {
   color: #fffbe6;
 }
 
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .burger {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 10px;
+  }
+
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #fafafa;
+    border-top: 1px solid #ddd;
+    gap: 16px;
+  }
+
+  .nav ul.open {
+    display: flex;
+  }
+
+  .nav li {
+    width: 100%;
+  }
+
+  .nav li a {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   .contact-form {
@@ -151,34 +251,3 @@ header {
   }
 }
 
-/* Footer */
-footer {
-  width: 100%;
-  text-align: center;
-  color: #a4a29e;
-  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
-  font-size: 15px;
-  margin-bottom: 28px;
-}
-
-.social {
-  margin-top: 38px;
-  margin-bottom: 6px;
-}
-
-.instagram-icon {
-  width: 24px;
-  height: 24px;
-  opacity: 0.62;
-  transition: opacity 0.18s;
-  filter: grayscale(45%);
-}
-.instagram-icon:hover {
-  opacity: 1;
-  filter: none;
-}
-.copyright {
-  margin-top: 0;
-  letter-spacing: 0.02em;
-  color: #727060;
-}
