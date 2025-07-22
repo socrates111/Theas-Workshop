@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     // console.log("✅ Burger Menu Connected");
   } else {
-    console.warn("⚠️ Burger menu elements not found");
+    // console.warn("⚠️ Burger menu elements not found");
   }
 
   // Lightbox preview logic

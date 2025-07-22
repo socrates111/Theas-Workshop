@@ -1,0 +1,63 @@
+.privacy-content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  color: #1a1a1a;
+  font-family: 'Work Sans', 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.privacy-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #2e3739;
+}
+
+.privacy-content h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #3c3c3c;
+  text-align: left;
+}
+
+.privacy-content p,
+.privacy-content ul {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.privacy-content ul {
+  padding-left: 1.5rem;
+}
+
+.privacy-content a {
+  color: #bda04b;
+  text-decoration: none;
+}
+
+.privacy-content a:hover {
+  text-decoration: underline;
+}
+
+footer li {
+  list-style-type: none;
+  margin-top: 10px;
+
+}
+
+.privacy {
+  
+  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
+  color: #74726f;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  transition: color 0.15s;
+  padding: 0 7px;
+}

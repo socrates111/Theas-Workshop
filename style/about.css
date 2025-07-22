@@ -3,9 +3,40 @@ html, body {
   padding: 0;
   background: #fafafa;
   color: #1a1a1a;
-  font-family: 'Work Sans', 'Nunito Sans', Arial, sans-serif;
+  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
   min-height: 100%;
 }
+
+/* @font-face {
+  font-family: 'Chelsea Market';
+  src: url('../fonts/Chelsea_Market,Jua,Roboto,Signika/Chelsea_Market/ChelseaMarket-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jua';
+  src: url('../fonts/Chelsea_Market,Jua,Roboto,Signika/Jua/Jua-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Chelsea_Market,Jua,Roboto,Signika/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../fonts/Chelsea_Market,Jua,Roboto,Signika/Signika/Signika-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
+
 
 /* Header/Nav */
 header {
@@ -39,7 +70,7 @@ header {
   text-decoration: none;
   font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
   color: #a4a29e;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   transition: color 0.15s;
@@ -132,6 +163,21 @@ footer {
   margin-top: 0;
   letter-spacing: 0.02em;
   color: #727060;
+}
+
+footer li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.privacy {
+  
+  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
+  color: #74726f;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  transition: color 0.15s;
+  padding: 0 7px;
 }
 
 

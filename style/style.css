@@ -3,11 +3,11 @@ html, body {
   padding: 0;
   background: #fafafa;
   color: #1a1a1a;
-  font-family: 'Chelsea Market', 'Jua';
+  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
   min-height: 100%;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Chelsea Market';
   src: url('../fonts/Chelsea_Market,Jua,Roboto,Signika/Chelsea_Market/ChelseaMarket-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -33,7 +33,7 @@ html, body {
   src: url('../fonts/Chelsea_Market,Jua,Roboto,Signika/Signika/Signika-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 
 
@@ -70,7 +70,7 @@ header {
   text-decoration: none;
   font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
   color: #a4a29e;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   transition: color 0.15s;
@@ -139,6 +139,11 @@ header {
   height: 530px;
   object-fit: cover;
   background: #fafafa;
+  padding: 30px;
+  background-color: #e7e7e7;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  
 }
 
 .slider-arrow {
@@ -205,8 +210,9 @@ header {
   bottom: 0;
   background: #fafafa;
   padding: 23px 17px;
-  text-align: center;
+  text-align: left;
   width: 100%;
+  margin-top: 10px;
 }
 
 .slider-section h1 {
@@ -293,6 +299,22 @@ footer {
   letter-spacing: 0.02em;
   color: #727060;
 }
+
+footer li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.privacy {
+  
+  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
+  color: #74726f;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  transition: color 0.15s;
+  padding: 0 7px;
+}
+
 
 /* ----------- RESPONSIVE STYLES ----------- */
 

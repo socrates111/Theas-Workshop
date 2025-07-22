@@ -1,8 +1,10 @@
-body {
+html, body {
   margin: 0;
-  font-family: 'Work Sans', 'Nunito Sans', sans-serif;
+  padding: 0;
   background: #fafafa;
-  color: #333;
+  color: #1a1a1a;
+  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
+  min-height: 100%;
 }
 
 /* Header/Nav */
@@ -37,7 +39,7 @@ header {
   text-decoration: none;
   font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
   color: #a4a29e;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   transition: color 0.15s;
@@ -243,6 +245,21 @@ footer {
   margin-top: 0;
   letter-spacing: 0.02em;
   color: #727060;
+}
+
+footer li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.privacy {
+  
+  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
+  color: #74726f;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  transition: color 0.15s;
+  padding: 0 7px;
 }
 
 /* === Responsive Breakpoints === */
