@@ -68,7 +68,7 @@ header {
 
 .nav li a {
   text-decoration: none;
-  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
+  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif !important;
   color: #a4a29e;
   font-size: 1rem;
   letter-spacing: 0.06em;

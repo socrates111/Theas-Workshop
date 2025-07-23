@@ -7,36 +7,6 @@ html, body {
   min-height: 100%;
 }
 
-/* @font-face {
-  font-family: 'Chelsea Market';
-  src: url('../fonts/Chelsea_Market,Jua,Roboto,Signika/Chelsea_Market/ChelseaMarket-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Jua';
-  src: url('../fonts/Chelsea_Market,Jua,Roboto,Signika/Jua/Jua-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Chelsea_Market,Jua,Roboto,Signika/Roboto/Roboto-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Signika';
-  src: url('../fonts/Chelsea_Market,Jua,Roboto,Signika/Signika/Signika-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-} */
-
-
-
 
 /* Header/Nav */
 header {
@@ -68,7 +38,7 @@ header {
 
 .nav li a {
   text-decoration: none;
-  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif;
+  font-family: 'Nunito Sans', 'Work Sans', Arial, sans-serif !important;
   color: #a4a29e;
   font-size: 1rem;
   letter-spacing: 0.06em;
